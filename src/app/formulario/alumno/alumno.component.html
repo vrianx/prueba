@@ -1,0 +1,61 @@
+<section>
+  <fieldset>
+    <label for="">rut</label>
+    <input
+      type="text"
+      name="id"
+      [value]="nuevoHistorial.rut"
+      (input)="cambiarId($event)"
+      >
+      <p>{{ nuevoHistorial.rut }}</p>
+  </fieldset>
+  <fieldset>
+    <label for="">Nombre</label>
+    <input
+      type="text"
+      name="nombre"
+      [value]="nuevoHistorial.nombre"
+      (input)="cambiarNombre($event)"
+      >
+      <p>{{ nuevoHistorial.nombre }}</p>
+  </fieldset>
+  <fieldset>
+    <label for="">apellido</label>
+    <input
+      type="text"
+      name="nombre"
+      [value]="nuevoHistorial.apellido"
+      (input)="cambiarApellido($event)"
+      >
+      <p>{{ nuevoHistorial.apellido }}</p>
+  </fieldset>
+  <fieldset>
+    <label for="">edad</label>
+    <input
+      type="text"
+      name="nombre"
+      [value]="nuevoHistorial.edad"
+      (input)="cambiarEdad($event)"
+      >
+      <p>{{ nuevoHistorial.edad }}</p>
+  </fieldset>
+  <fieldset>
+    <label for="">seccion</label>
+    <input
+      type="text"
+      name="nombre"
+      [value]="nuevoHistorial.seccion"
+      (input)="cambiarSeccion($event)"
+      >
+      <p>{{ nuevoHistorial.seccion }}</p>
+  </fieldset>
+  <fieldset>
+    <button
+      type="button"
+      role="button"
+      (click)="guardarHistorial()"
+    >
+      Guardar
+    </button>
+  </fieldset>
+</section>

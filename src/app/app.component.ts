@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Historial_alumno } from './modulos/historial-colegio';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'prueba3';
+  public elementosGuardados: Array<Historial_alumno> = [];
+
+
+
 }

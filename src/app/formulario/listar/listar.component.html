@@ -1,0 +1,7 @@
+<section>
+  <app-alumno
+    *ngFor="let item of alumno"
+    [alumno]="item"
+    (rutAlumno)="escucharId('')"
+  ></app-alumno>
+</section>
